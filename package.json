@@ -1,0 +1,23 @@
+{
+  "name": "pulumi-s3-lambda-webstack",
+  "version": "1.0.1",
+  "description": "Pulumi component to make it easy to create a static frontend from S3 available through HTTPS and AWS Lambda backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alchrabas/pulumi-s3-lambda-webstack.git"
+  },
+  "author": "alchrabas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alchrabas/pulumi-s3-lambda-webstack/issues"
+  },
+  "homepage": "https://github.com/alchrabas/pulumi-s3-lambda-webstack#readme",
+  "dependencies": {
+    "@pulumi/pulumi": "^1.12.0",
+    "@pulumi/aws": "^1.24.0"
+  }
+}

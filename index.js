@@ -5,9 +5,9 @@ const pulumi = require('@pulumi/pulumi');
 
 const TEN_MINUTES = 60 * 10;
 
-class StaticFrontendWithLambdaBackend extends pulumi.ComponentResource {
+class S3LambdaWebstack extends pulumi.ComponentResource {
     constructor(name, targetDomain, contentBucket, apiGateway, logsBucket = undefined) {
-        super('StaticFrontendWithLambdaBackend', name, {}, {});
+        super('S3LambdaWebstack', name, {}, {});
 
         if (!logsBucket) {
             logsBucket = this.createLogsBucket(name, targetDomain);
@@ -203,5 +203,5 @@ class StaticFrontendWithLambdaBackend extends pulumi.ComponentResource {
 
 
 module.exports = {
-    StaticFrontendWithLambdaBackend,
+    StaticFrontendWithLambdaBackend: S3LambdaWebstack,
 };
